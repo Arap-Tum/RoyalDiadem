@@ -1,0 +1,291 @@
+/* COLORS */
+:root {
+  --pelte-1: #CA6EEB;
+  --plete-2:#0E93AF;
+  --plete-2-light: #D1EEF4;
+  --plete-2-ultralight: #EAF7FA;
+  --pelete-3: #000000;
+  /* Button */
+  --cta-bg: #CA6EEB;
+  --cta-hover: #B35ED6;  /* slightly darker for hover */
+  --cta-text: #FFFFFF;
+  --white-bg: #F9FAFB;
+  --white-bg-soft: #F4F6F8;
+  
+  --text-black: #1A1A1A;
+
+}
+/* NPONE DISPLAY ON LEARGE SCREEN */
+
+
+
+
+/* HEADER  SECTION */
+@media screen and (min-width: 800px) {
+
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    
+    .site-header {
+        display: block;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        padding: 5px 5%;
+        z-index: 1000;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    /* Nav */
+    .main-nav .nav-list {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-item a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        position: relative;
+        padding: 8px;
+        display: inline-block;
+    }
+
+    .nav-link {
+      padding: 8px 12px;
+      color: #333;
+    }
+
+    .nav-link.active { 
+      background-color: var(--cta-bg);
+      color: var(--cta-text);
+    }
+    
+    /* Dropdown */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px 0;
+        top: 100%;
+        left: 0;
+        min-width: 220px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 2000;
+    }
+    
+    .dropdown-menu li {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .dropdown-menu li a {
+        padding: 10px 20px;
+        display: block;
+        white-space: nowrap;
+        color: #333;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* Hover effects */
+    .nav-item a:hover,
+    .dropdown-menu li a:hover {
+      
+        /* background-color: rgba(#f5f5f5, 0.5); */
+        color: var(--cta-hover);
+    }
+
+    .nav-item.dropdown {
+      position: relative;
+  }
+  
+  .side-bar-link {
+    display: none;
+  }
+}
+
+/* Hero section  */
+@media screen and (min-width: 800px) {
+    .for-small-screen {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+    .hero-section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      padding: 0 5%;
+      box-sizing: border-box;
+    }
+  
+    .hero-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 100%;
+      gap: 60px;
+    }
+  
+    .sec-1 .info {
+      max-width: 600px;
+    }
+  
+    .sec-1 h2 {
+      font-size: 64px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+  
+    .sec-1 p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 32px;
+    }
+  
+    .cta-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      /* background-color: #4f46e5; */
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 30px;
+      /* text-decoration: none; */
+      transition: background-color 0.3s ease;
+    }
+  
+    
+  
+    .hero-img img {
+      max-width: 500px;
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .hero-about {
+        display: flex;
+       }
+
+       .about-img {
+        margin-top: 20px;
+        max-width: 500px;
+        height: auto;
+        object-fit: cover;
+       }
+
+    
+  }
+
+ /* About section */
+ @media screen and (min-width: 800px) {
+     .for-learge-screens {
+        display: block;
+     }
+    .about-section {
+      padding: 100px 5%;
+      background-color: #f9f9f9;
+    }
+  
+    .hero-about {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+    }
+  
+    .sec-1 {
+      max-width: 600px;
+    }
+  
+    .sec-1 h2 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+  
+    .about-info p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+  
+    .about-img img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  } 
+
+  /* service card */
+
+  @media screen and (min-width: 800px) {
+    .service-card h4 {
+        font-size: 20px;
+    }
+    .service-info{
+        font-size: 15px;
+       }
+    .service-card {
+        flex: 0 0 40%;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .get-involved-section {
+      display: grid;
+      align-items: center;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .footer-container {
+      display: flex;
+      flex-direction: row ;
+      justify-content: space-evenly;
+      /* gap: 2rem; */
+    }
+    .contact-info-section{
+      display: flex;
+      flex-direction: row;
+    }
+  }

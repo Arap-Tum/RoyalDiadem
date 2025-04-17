@@ -1,0 +1,5 @@
+{
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.agent.runTasks": false,
+    "liveServer.settings.port": 5501
+}
