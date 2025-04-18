@@ -1,4 +1,7 @@
-// Shadow on scroll
+import { displaySideBar } from "./scripts/sideBar.js";
+
+
+ // Shadow on scroll
 window.addEventListener("scroll", function () {
     const header = this.document.querySelector('.header');
     if (window.scrollY > 20) {
@@ -61,8 +64,7 @@ function connectSections() {
         .then(res => res.text())
         .then(data => {
              document.querySelector(".footer").innerHTML = data;
-            // console.log(footerDiv)
-            
+            // console.log(footerDiv)    
 
         })
         .catch(error => {
@@ -73,8 +75,9 @@ function connectSections() {
         .then(res => res.text())
         .then(data => {
              document.querySelector(".header-container").innerHTML = data;
-            // console.log(footerDiv)
             
+            displaySideBar();
+            // console.log(displaySideBar)
 
         })
         .catch(error => {

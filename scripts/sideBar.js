@@ -1,11 +1,15 @@
-const humbugerButton = document.querySelector('.hamburger-menu');
-const  sidebarPlaceholder = document.querySelector('.side-bar-link');
+export function displaySideBar () {
+    const humbugerButton = document.querySelector('.hamburger-menu');
+    const  sidebarPlaceholder = document.querySelector('.side-bar-link');
 
-// toogle the sidebar 
-humbugerButton.addEventListener('click', (event) => {
-    event.stopPropagation();
-    window.scrollTo(0, 0);
-    if (sidebarPlaceholder.innerHTML.trim() === '') {
+    // console.log("humbuger", humbugerButton)
+    // console.log("sidebar", sidebarPlaceholder)
+    
+    // toogle the sidebar 
+    humbugerButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        window.scrollTo(0, 0);
+        if (sidebarPlaceholder.innerHTML.trim() === '') {
         fetch('page-sections/side-bar.html')
             .then(response => {
                 if(!response) {
@@ -70,3 +74,5 @@ function setupSidebarEvents() {
  })
 }
 
+
+}
