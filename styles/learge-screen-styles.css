@@ -22,7 +22,9 @@
 
 /* HEADER  SECTION */
 @media screen and (min-width: 800px) {
-
+  .header {
+    display: none;
+}
 
     body {
         margin: 0;
@@ -37,7 +39,7 @@
         z-index: 1000;
     }
     
-    .container {
+   .site-header .container {
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -133,9 +135,7 @@
     .for-small-screen {
         display: none;
     }
-    .header {
-        display: none;
-    }
+    
     .hero-section {
       height: 100vh;
       display: flex;
