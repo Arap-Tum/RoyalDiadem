@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved | Royal Diadem</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/learge-screen-styles.css">
+    <link rel="stylesheet" href="styles/mobile-side-bar.css">
+    
+  <style>
+    :root {
+      --pelte-1: #CA6EEB;
+      --plete-2: #0E93AF;
+      --plete-2-light: #D1EEF4;
+      --plete-2-ultralight: #EAF7FA;
+      --cta-bg: #CA6EEB;
+      --cta-hover: #B35ED6;
+      --cta-text: #FFFFFF;
+      --white-bg: #F9FAFB;
+      --text-black: #1A1A1A;
+    }  
+
+    .content {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .get-involved-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--plete-2-ultralight);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: var(--plete-2);
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .cta-area {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta-area a {
+      background-color: var(--cta-bg);
+      color: var(--cta-text);
+      text-decoration: none;
+      padding: 0.9rem 1.8rem;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 0.5rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-area a:hover {
+      background-color: var(--cta-hover);
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container"> </div>
+
+  <div class="content">
+    <div class="get-involved-section">
+      <div class="card">
+        <h3>Join a Program</h3>
+        <p>Take part in healing circles, transformative workshops, or growth coaching. Your journey begins here, in a safe and empowering space.</p>
+      </div>
+      <div class="card">
+        <h3>Become a Mentor</h3>
+        <p>Use your story to guide others. Mentors provide the listening ear, the shared experience, and the steady encouragement someone else needs.</p>
+      </div>
+      <div class="card">
+        <h3>Volunteer with Us</h3>
+        <p>Whether you're helping behind the scenes or in-person at our events, your time and energy fuel transformation for others.</p>
+      </div>
+      <div class="card">
+        <h3>Donate or Partner</h3>
+        <p>Your support helps us expand our programs and reach more lives in need of healing. Every gift makes a difference.</p>
+      </div>
+    </div>
+
+    <div class="cta-area">
+      <!-- <a href="about.html">Learn About Royal Diadem</a>
+      <a href="services.html">Explore Our Services</a> -->
+      <a href="contuct.html">Contact Us</a>
+    </div>
+
+    <section class="footer-section">
+      <div class="footer"></div>
+   </section>
+
+   <script type="module" src="pageConectors.js"></script>
+
+  </div>
+</body>
+</html>

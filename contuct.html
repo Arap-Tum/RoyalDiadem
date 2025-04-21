@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Royal Diadem</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/learge-screen-styles.css">
+  <link rel="stylesheet" href="styles/mobile-side-bar.css">
+  
+
+  <style>
+    :root {
+      --pelte-1: #CA6EEB;
+      --plete-2: #0E93AF;
+      --plete-2-light: #D1EEF4;
+      --plete-2-ultralight: #EAF7FA;
+      --cta-bg: #CA6EEB;
+      --cta-hover: #B35ED6;
+      --cta-text: #FFFFFF;
+      --white-bg: #F9FAFB;
+      --text-black: #1A1A1A;
+    }
+
+   
+
+    .contact-section {
+      max-width: 700px;
+      margin: 4rem auto;
+      padding: 2.5rem 2rem;
+      background-color: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      color: var(--plete-2);
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 2px solid var(--plete-2-light);
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 80%;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--pelte-1);
+      outline: none;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    button {
+      background-color: var(--cta-bg);
+      color: var(--cta-text);
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 14px rgba(202, 110, 235, 0.4);
+    }
+
+    button:hover {
+      background-color: var(--cta-hover);
+    }
+  </style>
+</head>
+<body>
+    <div class="header-container"> </div>
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <section class="footer-section">
+    <div class="footer"></div>
+ </section>
+
+ <script type="module" src="pageConectors.js"></script>
+</body>
+</html>
