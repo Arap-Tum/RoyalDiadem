@@ -106,6 +106,8 @@
     <div class="header-container"> </div>
   <div class="contact-section">
     <h2>Contact Us</h2>
+
+    <p class="success-message"></p>
     <form action="#" method="post">
       <div>
         <label for="name">Full Name</label>
@@ -118,6 +120,12 @@
       </div>
 
       <div>
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required />
+      </div>
+
+
+      <div>
         <label for="subject">Subject</label>
         <input type="text" id="subject" name="subject" required />
       </div>
@@ -127,7 +135,7 @@
         <textarea id="message" name="message" required></textarea>
       </div>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" class="submit-btn">Send Message</button>
     </form>
   </div>
 
@@ -136,5 +144,6 @@
  </section>
 
  <script type="module" src="pageConectors.js"></script>
+ <script src="scripts/contactUs.js"></script>
 </body>
 </html>
